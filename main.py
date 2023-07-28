@@ -76,7 +76,7 @@ class GUI:
         self.label_input.pack()
 
         self.input_dir = StringVar()
-        self.entry_input = Entry(master, textvariable=self.input_dir)
+        self.entry_input = Entry(master, textvariable=self.input_dir, width=50)
         self.entry_input.pack()
 
         self.button_browse_input = Button(master, text="Browse", command=self.browse_input)
@@ -86,7 +86,7 @@ class GUI:
         self.label_output.pack()
 
         self.output_dir = StringVar()
-        self.entry_output = Entry(master, textvariable=self.output_dir)
+        self.entry_output = Entry(master, textvariable=self.output_dir, width=50)
         self.entry_output.pack()
 
         self.button_browse_output = Button(master, text="Browse", command=self.browse_output)
